@@ -37,7 +37,7 @@
     "playwright": "^1.50.1",
     "storybook": "^8.6.3",
     "tailwindcss": "^4",
-    "typescript": "^5",
+    "typescript": "^5.7.3",
     "vitest": "^3.0.7"
   },
   "eslintConfig": {
