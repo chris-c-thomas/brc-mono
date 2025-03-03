@@ -2,7 +2,7 @@
   "name": "brc-mono",
   "version": "0.0.1",
   "private": true,
-  "description": "Monorepo for the BRC Projects",
+  "description": "Monorepo for the ANL BRC Projects",
   "repository": {
       "type": "git",
       "url": "https://github.com/chris-c-thomas/brc-mono.git"
