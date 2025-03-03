@@ -150,9 +150,7 @@ function generateChangesetSummary() {
 
     let summary = '# Initial Release v0.1.0\n\n';
     summary +=
-      'This release represents the initial stable version of the project, incorporating all development work to date. ';
-    summary +=
-      'It establishes the foundation for future enhancements and includes the core functionality required for production use.\n\n';
+      'This release represents the initial stable version of the BRC Mono project.\n\n';
 
     const fileCount = (fileStats.match(/(\d+) files? changed/) || [0, '0'])[1];
     const insertions = (fileStats.match(/(\d+) insertions?/) || [0, '0'])[1];
@@ -161,7 +159,7 @@ function generateChangesetSummary() {
     summary += '## Overview\n\n';
     summary += `This release includes changes across ${fileCount} files with ${insertions} additions and ${deletions} deletions. `;
     summary +=
-      'The changes span multiple areas of the codebase and represent the complete implementation of the initial feature set.\n\n';
+      'The changes span multiple areas of the codebase and represent the complete implementation of the base app instances.\n\n';
 
     for (const [type, category] of Object.entries(categories)) {
       if (category.commits.length > 0) {
@@ -222,7 +220,7 @@ function generateChangesetSummary() {
     summary += contributorsSection;
 
     summary += '## For Reviewers\n\n';
-    summary += 'When reviewing this initial release, please consider:\n\n';
+    summary += 'When reviewing this release, please consider:\n\n';
     summary += '- Overall architecture and code organization\n';
     summary += '- Completeness of the feature set\n';
     summary += '- Documentation quality\n';
