@@ -37,7 +37,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules",
-    "prepare": "husky"
+    "prepare": "husky",
+    "changeset-summary": "node scripts/generate-changeset-summary.js",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
