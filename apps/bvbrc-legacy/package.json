@@ -1,0 +1,26 @@
+{
+  "name": "bvbrc-legacy",
+  "version": "1.0.0",
+  "description": "BV-BRC Legacy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step required for legacy application\" && exit 0",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "express": "4.19.2",
+    "ejs": "3.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2"
+  }
+}

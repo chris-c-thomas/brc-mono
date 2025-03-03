@@ -9,6 +9,6 @@ packages:
   - 'apps/brc-storybook'
   - 'apps/brc-playground'
   # legacy node.js app
-  - 'apps/bvbrc-dojo'
+  - 'apps/bvbrc-legacy'
   # shared packages
   - 'packages/*'
