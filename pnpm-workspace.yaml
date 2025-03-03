@@ -1,0 +1,14 @@
+packages:
+  # main next.js apps
+  - 'apps/bvbrc'
+  - 'apps/maage'
+  - 'apps/dxkb'
+  - 'apps/ldkb'
+  # other next.js apps
+  - 'apps/brc-docs'
+  - 'apps/brc-storybook'
+  - 'apps/brc-playground'
+  # legacy node.js app
+  - 'apps/bvbrc-dojo'
+  # shared packages
+  - 'packages/*'
