@@ -46,5 +46,5 @@ app.use((err, req, res, next) => {
 
 // start server
 app.listen(port, () => {
-  console.log(\`BV-BRC Legacy server running on http://localhost:\${port}\`);
+  console.log(`BV-BRC Legacy server running on http://localhost:${port}`);
 });
