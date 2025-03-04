@@ -2,14 +2,14 @@
   "name": "brc-mono",
   "version": "0.0.1",
   "private": true,
-  "description": "Monorepo for the ANL BRC Projects",
+  "description": "Monorepo for Argonne National Laboratory's group of BRC related projects",
   "repository": {
     "type": "git",
     "url": "https://github.com/chris-c-thomas/brc-mono.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Chris Thomas",
+    "name": "Christopher C. Thomas",
     "email": "ccthomas@anl.gov"
   },
   "bugs": {
@@ -17,20 +17,21 @@
   },
   "homepage": "https://github.com/chris-c-thomas/brc-mono#readme",
   "keywords": [
+    "argonne national laboratory",
+    "bioinformatics resource center",
+    "monorepo",
     "brc",
     "bv-brc",
     "maage",
     "dxkb",
-    "ldkb",
-    "bioinformatics",
-    "argonne national laboratory",
-    "monorepo"
+    "ldkb"
   ],
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
+    "preinstall": "node scripts/preinstall.js",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
@@ -61,9 +62,14 @@
     "turbo": "latest",
     "typescript": "^5.7.3"
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+  "volta": {
+    "node": "23.9.0",
+    "pnpm": "10.5.2"
   },
-  "packageManager": "pnpm@8.14.0"
+  "engines": {
+    "node": ">=18.18.0",
+    "pnpm": ">=8.0.0",
+    "npm": "please-use-pnpm"
+  },
+  "packageManager": "pnpm@10.5.2"
 }

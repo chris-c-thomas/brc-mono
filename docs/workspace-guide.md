@@ -1,6 +1,6 @@
 # Managing the BRC Mono Workspace
 
-This document provides comprehensive technical guidance for managing the BRC Mono workspace, including detailed instructions for package management, dependency resolution, and workspace operations.
+This document provides comprehensive technical guidance for managing the BRC Mono workspace. It details instructions for package management, dependency resolution, workspace operations, and other related tasks.
 
 ## Table of Contents
 
@@ -27,7 +27,9 @@ This document provides comprehensive technical guidance for managing the BRC Mon
 
 ## Introduction
 
-BRC Mono is a monorepo built for the group of BRC related projects at Argonne National Laboratory, and is designed to house multiple applications and shared packages within a single repository. This structure allows code reuse, consistent versioning, and coordinated development while maintaining each application's distinct features, direction and primary objectives for their respective project teams.
+BRC Mono is a monorepo built for the group of BRC related projects at Argonne National Laboratory, and is designed to house multiple applications and shared packages within a single repository.
+
+This structure allows code reuse, consistent versioning, and coordinated development while maintaining each application's distinct features, direction and primary objectives for their respective project teams.
 
 ## Workspace Architecture
 

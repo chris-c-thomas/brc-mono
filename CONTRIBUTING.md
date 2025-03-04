@@ -1,6 +1,8 @@
 # Contributing to BRC Mono
 
-Thank you for your interest in contributing to the BRC Mono project! This document provides detailed guidelines to help you contribute effectively.
+This document provides detailed guidelines to contribute effectively.
+
+**Note:** This is a work in progress and subject to change 25 times a day until things are stable.
 
 ## Table of Contents
 
@@ -22,20 +24,13 @@ Thank you for your interest in contributing to the BRC Mono project! This docume
 
 ## Code of Conduct
 
-All contributors are expected to adhere to our code of conduct, promoting a respectful and inclusive environment. Instances of unacceptable behavior may be reported to the project maintainers.
+All contributors are expected to adhere to the code of conduct, promoting a respectful and inclusive environment. Instances of unacceptable behavior may be reported to the project maintainers.
 
 ## Development Workflow
 
 ### Setting Up Your Development Environment
 
 1. **Fork and clone the repository**:
-
-   ```bash
-   git clone https://github.com/YourUsername/brc-mono.git
-   cd brc-mono
-   ```
-
-   or
 
    ```bash
    gh repo clone https://github.com/YourUsername/brc-mono.git
