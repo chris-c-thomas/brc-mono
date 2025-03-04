@@ -23,9 +23,9 @@ brc-mono/
 │   ├── maage/                 # Midwest Alliance for Applied Genomic Epidemiology
 │   ├── dxkb/                  # Disease X Knowledge Base
 │   ├── ldkb/                  # Low Dose Radiation Research Knowledge Base
-│   ├── docs/                  # Shared & Individual project documentation
-│   ├── storybook/             # UI development, testing and documentation
-│   ├── playground/            # Developer Playground
+│   ├── brc-docs/              # Shared & Individual project documentation
+│   ├── brc-storybook/         # UI development, testing and documentation
+│   ├── brc-playground/        # Developer Playground
 │   ├── bvbrc-legacy/          # Legacy BV-BRC-Web application
 │   └── ...
 ├── packages/                  # Shared packages

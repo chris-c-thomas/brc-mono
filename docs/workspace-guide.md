@@ -49,9 +49,9 @@ The workspace is organized into two primary directories:
   - `maage`: Midwest Alliance for Applied Genomic Epidemiology
   - `dxkb`: Disease X Knowledge Base
   - `ldkb`: Low Dose Radiation Research Knowledge Base
-  - `docs`: Documentation site for `bvbrc`, `maage`, `dxkb`, and `ldkb`
-  - `storybook`: Storybook Library for UI component docs and testing
-  - `playground`: Playground developer application
+  - `brc-docs`: Documentation site for `bvbrc`, `maage`, `dxkb`, and `ldkb`
+  - `brc-storybook`: Storybook Library for UI component docs and testing
+  - `brc-playground`: Playground developer application
   - `bvbrc-legacy`: [BV-BRC-Web](https://github.com/BV-BRC/BV-BRC-Web)
 
 - **`/packages`**: Contains shared libraries used by applications
@@ -73,9 +73,9 @@ packages:
   - "apps/dxkb"
   - "apps/ldkb"
   # other next.js apps
-  - "apps/docs"
-  - "apps/storybook"
-  - "apps/playground"
+  - "apps/brc-docs"
+  - "apps/brc-storybook"
+  - "apps/brc-playground"
   # legacy node.js app
   - "apps/bvbrc-legacy"
   # shared packages
