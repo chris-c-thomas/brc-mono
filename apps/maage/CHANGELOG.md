@@ -1,19 +1,25 @@
+# maage
+
+## 0.2.0
+
+### Minor Changes
+
 ---
-"bvbrc-legacy": minor
-"playground": minor
-"storybook": minor
-"@brc-mono/utils": minor
-"@brc-mono/ui": minor
+
+"brc-mono": minor
 "bvbrc": minor
-"maage": minor
-"docs": minor
+"bvbrc-legacy": minor
 "dxkb": minor
 "ldkb": minor
+"maage": minor
+"@brc-mono/ui": minor
+"@brc-mono/utils": minor
+
 ---
 
 This release represents the initial stable version of the BRC Mono project.
 
-This release includes changes across 184 files with 12158 additions and 24 deletions. The changes span multiple areas of the codebase and represent the complete implementation of the base app instances.
+This release includes changes across 187 files with 12346 additions and 24 deletions. The changes span multiple areas of the codebase and represent the complete implementation of the base app instances.
 
 - **packages**: add generic shared packages as examples
 
@@ -26,6 +32,8 @@ This release includes changes across 184 files with 12158 additions and 24 delet
 - add READMEs and additional repo related documents
 - add new repo README.md
 
+- update app names to prevent namespace conflicts
+- add changeset for initial v0.1.0
 - update package.json to reflect file name change
 - add .npmrc for project scoped package manager configurations
 - modify wording
@@ -49,10 +57,10 @@ This release includes changes across 184 files with 12158 additions and 24 delet
 - scaffold(apps): bvbrc
 
 - **Branch:** This release merges `dev` into `main`
-- **Commit Count:** 26 commits included
-- **File Changes:** 184 files changed, 12158 insertions(+), 24 deletions(-)
+- **Commit Count:** 28 commits included
+- **File Changes:** 187 files changed, 12346 insertions(+), 24 deletions(-)
 
-- **Chris Thomas** (26 commits)
+- **Chris Thomas** (28 commits)
 
 This changeset represents the collaborative work of multiple contributors. GitHub usernames may differ from the author information above. To see the complete list of contributors with GitHub usernames, please check the PR history and commit details.
 

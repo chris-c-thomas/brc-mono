@@ -1,15 +1,8 @@
----
-"bvbrc-legacy": minor
-"brc-playground": minor
-"brc-storybook": minor
-"@brc-mono/utils": minor
-"@brc-mono/ui": minor
-"bvbrc": minor
-"maage": minor
-"brc-docs": minor
-"dxkb": minor
-"ldkb": minor
----
+# @brc-mono/utils
+
+## 0.1.0
+
+### Minor Changes
 
 ---
 
