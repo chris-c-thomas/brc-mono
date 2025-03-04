@@ -12,22 +12,12 @@ A comprehensive monorepo for ANL (Argonne National Laboratory) BRC Projects, con
 
 This monorepo consolidates all BRC (Bioinformatics Resource Centers) projects under a single repository, providing a consistent development experience, shared components, and standardized tooling.
 
-### Main Apps
+### Main Applications
 
-- **BVBRC** (`apps/bvbrc`)
-- **MAAGE** (`apps/maage`)
-- **DXKB** (`apps/dxkb`)
-- **LDKB** (`apps/ldkb`)
-
-### Legacy App
-
-- **BV-BRC Legacy** (`apps/bvbrc-legacy`)
-
-### Other Apps
-
-- **Docs** (`apps/docs`)
-- **Storybook** (`apps/storybook`)
-- **Playground** (`apps/playground`)
+- **BVBRC** (`apps/bvbrc`): BV-BRC (Bacterial and Viral Bioinformatics Resource Center) Application
+- **MAAGE** (`apps/maage`): MAAGE Application
+- **DXKB** (`apps/dxkb`): DXKB Application
+- **LDKB** (`apps/ldkb`): LDKB Application
 
 [View the full project structure](#project-structure)
 
@@ -42,7 +32,7 @@ This monorepo consolidates all BRC (Bioinformatics Resource Centers) projects un
 
 ```bash
 # Clone the repository
-gh repo clone chris-c-thomas/brc-mono
+git clone https://github.com/chris-c-thomas/brc-mono.git
 cd brc-mono
 
 # Install dependencies
@@ -53,10 +43,6 @@ pnpm dev
 
 # Or start a specific application
 pnpm dev --filter=bvbrc
-
-pnpm dev --filter=maage
-
-... etc
 ```
 
 ## Key Commands
@@ -75,22 +61,21 @@ Add `--filter=<app-name>` to run commands for specific applications (e.g., `pnpm
 
 ```
 brc-mono/
-├── apps/                      # Applications
-│   ├── bvbrc/                 # BV-BRC
-│   ├── maage/                 # MAAGE
-│   ├── dxkb/                  # DXKB
-│   ├── ldkb/                  # LDKB
-│   ├── bvbrc-legacy/          # Legacy
-│   ├── docs/                  # Docs (for the apps)
-│   ├── storybook/             # Component Stories
-│   └── playground/            # Dev Playground
-
+├── apps/                      # Application packages
+│   ├── bvbrc/                 # BV-BRC Application
+│   ├── maage/                 # MAAGE Application
+│   ├── dxkb/                  # DXKB Application
+│   ├── ldkb/                  # LDKB Application
+│   ├── brc-docs/              # Documentation site
+│   ├── brc-storybook/         # Component library showcase
+│   ├── brc-playground/        # Development playground
+│   └── bvbrc-legacy/          # Legacy Express.js application
 ├── packages/                  # Shared packages
-│   ├── ui/                    #
-│   └── utils/                 #
-├── docs/                      # Docs (for the monorepo)
-├── package.json               # Root package.json
-├── pnpm-workspace.yaml        # PNPM
+│   ├── ui/                    # Shared UI components
+│   └── utils/                 # Shared utility functions
+├── docs/                      # Additional documentation
+├── package.json               # Root package configuration
+├── pnpm-workspace.yaml        # pnpm workspace configuration
 ├── turbo.json                 # Turborepo configuration
 └── README.md                  # This file
 ```
