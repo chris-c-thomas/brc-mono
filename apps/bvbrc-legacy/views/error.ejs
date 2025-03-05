@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Error</h1>
+  </header>
+  <main>
+    <section>
+      <h2><%= message %></h2>
+      <% if (error && error.stack) { %>
+        <pre><%= error.stack %></pre>
+      <% } %>
+      <p><a href="/">Return Home</a></p>
+    </section>
+  </main>
+</body>
+</html>

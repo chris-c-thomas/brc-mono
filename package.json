@@ -2,40 +2,74 @@
   "name": "brc-mono",
   "version": "0.0.1",
   "private": true,
-  "description": "Monorepo for the BRC Projects",
+  "description": "Monorepo for Argonne National Laboratory's group of BRC related projects",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/chris-c-thomas/brc-mono.git"
+    "type": "git",
+    "url": "https://github.com/chris-c-thomas/brc-mono.git"
   },
   "license": "MIT",
   "author": {
-      "name": "Chris Thomas",
-      "email": "ccthomas@anl.gov"
+    "name": "Christopher C. Thomas",
+    "email": "ccthomas@anl.gov"
   },
   "bugs": {
-      "url": "https://github.com/chris-c-thomas/brc-mono/issues"
+    "url": "https://github.com/chris-c-thomas/brc-mono/issues"
   },
   "homepage": "https://github.com/chris-c-thomas/brc-mono#readme",
-  "keywords": ["brc", "bv-brc", "maage", "dxkb", "ldkb", "bioinformatics", "argonne national laboratory", "monorepo"],
+  "keywords": [
+    "argonne national laboratory",
+    "bioinformatics resource center",
+    "monorepo",
+    "brc",
+    "bv-brc",
+    "maage",
+    "dxkb",
+    "ldkb"
+  ],
   "workspaces": [
-      "apps/*",
-      "packages/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
-      "build": "turbo run build",
-      "dev": "turbo run dev",
-      "lint": "turbo run lint",
-      "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-      "test": "turbo run test",
-      "clean": "turbo run clean && rm -rf node_modules"
+    "preinstall": "node scripts/preinstall.js",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "prepare": "husky",
+    "changeset-summary": "node scripts/changeset-summary.js",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.{js,jsx,ts,tsx,css,md,html,json}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
-      "prettier": "^3.1.0",
-      "turbo": "latest"
+    "@changesets/cli": "^2.28.1",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.1.0",
+    "turbo": "latest",
+    "typescript": "^5.7.3"
+  },
+  "volta": {
+    "node": "23.9.0",
+    "pnpm": "10.5.2"
   },
   "engines": {
-      "node": ">=18.0.0",
-      "pnpm": ">=8.0.0"
+    "node": ">=18.18.0",
+    "pnpm": ">=8.0.0",
+    "npm": "please-use-pnpm"
   },
-  "packageManager": "pnpm@8.14.0"
+  "packageManager": "pnpm@10.5.2"
 }
