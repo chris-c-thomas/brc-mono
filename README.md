@@ -41,7 +41,7 @@ brc-mono/
 
 ## Prerequisites
 
-***likely to change***
+***Likely to Change***
 
 - Node.js >= 18.18.0
 - pnpm >= 8.0.0
