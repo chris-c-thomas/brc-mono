@@ -1,20 +1,15 @@
 # BRC Mono
 
-A monorepo for the projects built on Argonne National Laboratory's BRC platform.
+***This is an ongoing work in progress***
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-[![Node](https://img.shields.io/badge/node-%3E%3D18.18.0-blue.svg)](https://nodejs.org/)
-[![pnpm](https://img.shields.io/badge/pnpm-%3E%3D8.0.0-blue.svg)](https://pnpm.io/)
+## Projects
 
-## Project Overview
+- [BV-BRC](https://www.bv-brc.org) - Bacterial and Viral Bioinformatics Resource Center
+- [MAAGE](https://www.maage-brc.org) - Midwest Alliance for Applied Genomic Epidemiology
+- [DXKB](https://www.dxkb.org) - Disease X Knowledge Base
+- [LDKB](https://www.ldkb.org) - Low Dose Radiation Research Knowledge Base
 
-This monorepo consolidates the Bacterial and Viral Bioinformatics Resource Center, the Midwest Alliance for Applied Genomic Epidemiology, the Disease X Knowledge Base and the Low Dose Radiation Research Knowledge Base projects under a single monolithic repository.
-
-It provides a consistent development experience with shared components and standardized tooling.
-
-## Project Structure
+## Directory Structure
 
 ```
 brc-mono/
@@ -23,102 +18,111 @@ brc-mono/
 │   ├── maage/                 # Midwest Alliance for Applied Genomic Epidemiology
 │   ├── dxkb/                  # Disease X Knowledge Base
 │   ├── ldkb/                  # Low Dose Radiation Research Knowledge Base
-│   ├── brc-docs/              # Shared & Individual project documentation
-│   ├── brc-storybook/         # UI development, testing and documentation
-│   ├── brc-playground/        # Developer Playground
-│   ├── bvbrc-legacy/          # Legacy BV-BRC-Web application
-│   └── ...
+│   ├── brc-docs/              # Shared & individual project documentation
+│   ├── brc-storybook/         # UI component library, testing environment, and documentation
+│   ├── brc-playground/        # Developer playground
+│   └── bvbrc-legacy/          # BV-BRC-Web legacy application
 ├── packages/                  # Shared packages
 │   ├── ui/                    # Shared UI components
 │   ├── utils/                 # Shared utility functions
 │   └── ...
-├── docs/                      # GitHub Pages documentation Site
-├── package.json               # Root workspace package.json
-├── pnpm-workspace.yaml        # pnpm workspace config
-├── turbo.json                 # Turborepo config
-├── ...
-├── ...
-├── ...
+└── ... Configuration files
 ```
 
-## Quick Start
+## Technology
 
-### Prerequisites
-
-- Node.js >= 18.18.0
-- pnpm >= 8.0.0
-
-### Setup & Development
-
-```bash
-# Clone the repository
-git clone https://github.com/chris-c-thomas/brc-mono.git
-cd brc-mono
-
-# Install dependencies
-pnpm install
-
-# Start all applications in development mode
-pnpm dev
-
-# Or start a specific application
-pnpm dev --filter=bvbrc
-```
-
-## Key Commands
-
-| Command      | Description                            |
-| ------------ | -------------------------------------- |
-| `pnpm dev`   | Start development servers              |
-| `pnpm build` | Build all applications                 |
-| `pnpm lint`  | Run linting on all code                |
-| `pnpm test`  | Run all tests                          |
-| `pnpm clean` | Clean build artifacts and node_modules |
-
-Add `--filter=<app-name>` to run commands for specific applications (e.g., `pnpm build --filter=bvbrc`).
-
-## Technology Stack
+***Work in progress***
 
 - **Core**: Next.js 15.2, React 19, TypeScript 5.7+
 - **Build**: Turborepo, pnpm workspaces
 - **Styling**: Tailwind CSS 4
 - **Quality**: ESLint, Prettier, Commitlint
-- **Version Control**: Changesets
+- **Versioning**: Changesets
 
-## Documentation & Wiki
+## Prerequisites
 
-### Docs
+***likely to change***
 
-**WIP**
+- Node.js >= 18.18.0
+- pnpm >= 8.0.0
 
-- [BRC Mono Workspace Guide](./docs/monorepo-workspace-guide.md)
-- [BRC Mono Contributing Guide](./docs/contributing.md)
--
--
--
--
--
+## Getting Started
 
-[GitHub Pages Site](https://chris-c-thomas.github.io/brc-mono)
+1. Clone:
+   ```bash
+   git clone https://github.com/chris-c-thomas/brc-mono.git
+   cd brc-mono
+   ```
 
-[GitHub Repo /docs](https://github.com/chris-c-thomas/brc-mono/blob/main/docs/)
+2. Install:
+   ```bash
+   pnpm install
+   ```
 
-### Wiki
+3. Build:
+   ```bash
+   pnpm build
+   ```
 
-View the [BRC Mono Wiki](https://github.com/chris-c-thomas/brc-mono/wiki)
+## Development
 
-Clone the BRC Mono Wiki:
+### Dev Servers
 
+For all applications:
+```bash
+pnpm dev
 ```
-gh repo clone chris-c-thomas/brc-mono.wiki
+
+For a specific application:
+```bash
+pnpm dev --filter=bvbrc  # Start only the BVBRC application
 ```
 
+### Running Linting, Tests, and Builds
+
+```bash
+# Run linting
+pnpm lint
+pnpm lint --filter=bvbrc  # Lint specific workspace
+
+# Run tests
+pnpm test
+pnpm test --filter=@brc-mono/ui  # Test specific workspace
+
+# Build for production
+pnpm build
+pnpm build --filter=bvbrc  # Build specific workspace
 ```
-git clone https://github.com/chris-c-thomas/brc-mono.wiki.git
-```
+
+## Purpose
+***Work in Progress***
+
+1. **Code Sharing**: Common components, utilities, and configurations shared across applications
+2. **Atomic Changes**: Multiple packages can be modified, tested, and released together
+3. **Simplified Dependencies**: Project-wide dependency management with a single lockfile
+4. **Coordinated Versioning**: Synchronized versioning across packages using changesets
+5. **Build Optimization**: Intelligent caching and parallel execution for faster builds
+
+## Contributing
+
+***TODO: CONTRIBUTING.md***
+<!-- This project follows conventional commits standards and uses changesets for version management. See the [Contributing Guidelines](./docs/CONTRIBUTING.md) for more details. -->
+
+## Security
+
+***TODO: SECURITY.md***
+<!-- Security vulnerabilities should be reported to [admin@maage-brc.org](mailto:admin@maage-brc.org). For more information, see our [Security Policy](./docs/SECURITY.md). -->
+
+## Code of Conduct
+
+***TODO: CODE_OF_CONDUCT.md***
+<!-- We are committed to providing a welcoming and inclusive environment. Please read our [Code of Conduct](./docs/CODE_OF_CONDUCT.md) for details. -->
+
+## Privacy
+
+***TODO: PRIVACY.md***
+<!-- For information about how we collect and use data, see our [Privacy Policy](./docs/privacy.md). -->
 
 ## License
 
-This project is licensed under the MIT License
-
-Read the [LICENSE](LICENSE.txt)
+This project is licensed under the MIT [License](LICENSE.txt)
